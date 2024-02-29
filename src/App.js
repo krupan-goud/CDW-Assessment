@@ -16,9 +16,9 @@ function App() {
   };
 
   useEffect(() => {
-    const apiUrl = 'https://mocki.io/v1/ddb7e0a8-e218-4e36-b1be-b902cdb1c098';
+    const URL = 'https://mocki.io/v1/ddb7e0a8-e218-4e36-b1be-b902cdb1c098';
 
-    axios.get(apiUrl)
+    axios.get(URL)
       .then(response => {
         setUserDetails(response.data);
       })
@@ -54,7 +54,7 @@ function App() {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto text-end searchMain">
-                  <div className='searchInfo text-end' style={{ display: 'flex', alignItems: 'center', marginLeft: 'auto' }}>
+                  <div className='searchInfo text-end' >
                     <IoSearch className="searchIcon" />
                     <Form.Control
                       type="text"
@@ -68,6 +68,11 @@ function App() {
               </Navbar.Collapse>
             </Col>
           </Container>
+          <div className="fixed-icon">
+            <div className="circle">
+              <span className="plus">+</span>
+            </div>
+          </div>
         </Navbar>
       </div>
 
@@ -75,7 +80,7 @@ function App() {
         <Row>
           <Col lg={12} md={12} xs={12}>
             <Container className='d-flex justify-content-start mt-4'>
-              <h4 className='mb-4'>Administrators</h4>
+              <h4 className='headingLabel mb-4'>Administrators</h4>
             </Container>
           </Col>
         </Row>
@@ -105,7 +110,7 @@ function App() {
         <Row>
           <Col lg={12} md={12} xs={12}>
             <Container className='d-flex justify-content-start mt-3'>
-              <h4 className='mb-4'>Members</h4>
+              <h4 className='headingLabel mb-4'>Members</h4>
             </Container>
           </Col>
         </Row>
