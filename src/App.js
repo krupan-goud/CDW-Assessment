@@ -87,11 +87,12 @@ function App() {
         <Row >
           {filteredAdministrators.map((user, index) => (
             <Col key={index} lg={3} md={4} sm={6} xs={12}>
-              <Card className="mb-4" style={{ border: 'none', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
+              <Card className="cardStyles">
                 <Row>
                   <Col lg={4} md={4} sm={4} xs={4} className="d-flex align-items-center justify-content-center">
                     <div style={{ borderRadius: '50%', overflow: 'hidden', width: '40px', height: '40px' }}>
-                      <img src={user.img} alt={user.first_name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />                    </div>
+                      <img className='img' src={user.img} alt={user.first_name} />
+                    </div>
                   </Col>
                   <Col lg={8} md={8} sm={8} xs={8} className="d-flex align-items-center">
                     <Row>
@@ -117,11 +118,12 @@ function App() {
         <Row className='mb-4'>
           {filteredMembers.map((user, index) => (
             <Col key={index} lg={3} md={4} sm={6} xs={12}>
-              <Card className="mb-4" style={{ border: 'none', boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
+              <Card className="cardStyles">
                 <Row>
                   <Col lg={4} md={4} sm={4} xs={4} className="d-flex align-items-center justify-content-center">
                     <div style={{ borderRadius: '50%', overflow: 'hidden', width: '40px', height: '40px' }}>
-                      <img src={user.img} alt={user.first_name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />                    </div>
+                      <img className='img' src={user.img} alt={user.first_name} />
+                    </div>
                   </Col>
                   <Col lg={8} md={8} sm={8} xs={8} className="d-flex align-items-center">
                     <Row>
