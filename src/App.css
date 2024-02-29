@@ -80,13 +80,21 @@ p {
 .nameLabel {
   font-size: 15px;
   font-weight: 500;
-  margin-bottom: 2px;
+  margin-bottom: 13px;
+  margin-left: -30px;
+  word-break: break-all;
+  display: block;
+  text-align: left;
 }
 
 .emailLabel {
   font-size: 10px;
   font-weight: 400;
   margin-top: -5px;
+  margin-left: -30px;
+  word-break: break-all;
+  display: block;
+  text-align: left;
 }
 
 @keyframes App-logo-spin {
